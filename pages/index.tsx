@@ -1,15 +1,12 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-
+import PageHeader from "@/components/UI/page-header";
 
 export default function Homepage() {
   return (
     <>
-      <main>
-        <div>
-          <h1>Test</h1>
-        </div>
-      </main>
+      <PageHeader title="Homepage" />
+      <div className="flex">
+        <h1 className="text-6xl">W Home</h1>
+      </div>
     </>
-  )
+  );
 }
