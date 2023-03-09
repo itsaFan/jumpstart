@@ -9,7 +9,7 @@ export default function RegCard(props: Props) {
   return (
     <section className="flex justify-center items-center h-screen content-center">
       <div className={classes.cardBack}>
-        <h1 className="text-center mt-5 text-3xl font-semibold">Register</h1>
+        <h1 className="text-center mt-5 text-2xl font-semibold">Register</h1>
         <div className={classes.cardFront} >
           {props.children}
           </div>

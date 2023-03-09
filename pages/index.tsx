@@ -7,6 +7,7 @@ export default function Homepage() {
       <div className="flex">
         <h1 className="text-6xl">W Home</h1>
       </div>
+      
     </>
   );
 }
