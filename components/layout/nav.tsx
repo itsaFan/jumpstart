@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
-import classes from "./css/nav.module.css";
 import NavSearch from "./navSearch";
 
 export default function NavBar() {
