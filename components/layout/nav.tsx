@@ -37,8 +37,8 @@ export default function NavBar() {
       <div className="flex md:order-4">
         <Dropdown inline label={<Avatar alt="User settings" img="/images/userprofile.png" rounded />}>
           <Dropdown.Header>
-            <span className="block text-sm">Bonnie Green</span>
-            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
+            <span className="block text-sm">Steff</span>
+            <span className="block truncate text-sm font-medium">steff@email.com</span>
           </Dropdown.Header>
           <Dropdown.Item>My Profile</Dropdown.Item>
           <Dropdown.Item>Order History</Dropdown.Item>
