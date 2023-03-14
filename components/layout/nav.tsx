@@ -3,6 +3,7 @@ import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import NavSearch from "./navSearch";
 import LoginForm from "../auth/login/login-form";
 
+
 export default function NavBar() {
   return (
     <Navbar fluid rounded className="my-3 bg-zinc-800">
@@ -21,7 +22,8 @@ export default function NavBar() {
             <h3>Home</h3>
           </Navbar.Link>
           <Navbar.Link>
-          <LoginForm />
+            {/* <LoginPage /> */}
+            <LoginForm />
             {/* <h3>About</h3> */}
           </Navbar.Link>
           <Navbar.Link href="/login">
@@ -35,10 +37,10 @@ export default function NavBar() {
           </Navbar.Link> */}
         </Navbar.Collapse>
       </div>
-      
 
+      {/* <LoginForm /> */}
       <div className="flex md:order-4">
-        <Dropdown inline label={<Avatar alt="User settings" img="/images/userprofile.png" rounded><LoginForm /></Avatar>} >
+        <Dropdown inline label={<Avatar alt="User settings" img="/images/userprofile.png" rounded />}>
           <Dropdown.Header>
             <span className="block text-sm">Steff</span>
             <span className="block truncate text-sm font-medium">steff@email.com</span>
