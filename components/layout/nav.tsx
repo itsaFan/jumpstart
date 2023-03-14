@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import NavSearch from "./navSearch";
+import LoginForm from "../auth/login/login-form";
 
 export default function NavBar() {
   return (
@@ -19,10 +20,11 @@ export default function NavBar() {
           <Navbar.Link href="/" active>
             <h3>Home</h3>
           </Navbar.Link>
-          <Navbar.Link href="/">
-            <h3>About</h3>
+          <Navbar.Link>
+          <LoginForm />
+            {/* <h3>About</h3> */}
           </Navbar.Link>
-          <Navbar.Link href="/navbars">
+          <Navbar.Link href="/login">
             <h3>Services</h3>
           </Navbar.Link>
           <Navbar.Link href="/register">
@@ -33,9 +35,10 @@ export default function NavBar() {
           </Navbar.Link> */}
         </Navbar.Collapse>
       </div>
+      
 
       <div className="flex md:order-4">
-        <Dropdown inline label={<Avatar alt="User settings" img="/images/userprofile.png" rounded />}>
+        <Dropdown inline label={<Avatar alt="User settings" img="/images/userprofile.png" rounded><LoginForm /></Avatar>} >
           <Dropdown.Header>
             <span className="block text-sm">Steff</span>
             <span className="block truncate text-sm font-medium">steff@email.com</span>
