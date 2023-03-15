@@ -11,7 +11,7 @@ export default function ProductItem() {
         <hr />
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold text-white">$599</span>
-          <Button link="">
+          <Button link="/product/1">
             <p className="text-xs">Add to Cart</p>
           </Button>
         </div>

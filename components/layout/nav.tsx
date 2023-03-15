@@ -26,11 +26,11 @@ export default function NavBar() {
             <LoginForm />
             {/* <h3>About</h3> */}
           </Navbar.Link>
-          <Navbar.Link href="/login">
-            <h3>Services</h3>
+          <Navbar.Link href="">
+            <h3>Cart</h3>
           </Navbar.Link>
           <Navbar.Link href="/register">
-            <h3>Products</h3>
+            <h3>Register</h3>
           </Navbar.Link>
           {/* <Navbar.Link href="/register">
             <h3>Promo</h3>
