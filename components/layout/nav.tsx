@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import NavSearch from "./navSearch";
 import LoginForm from "../auth/login/login-form";
+import ItemCart from "../cart/item-cart";
 
 
 export default function NavBar() {
@@ -26,8 +27,8 @@ export default function NavBar() {
             <LoginForm />
             {/* <h3>About</h3> */}
           </Navbar.Link>
-          <Navbar.Link href="">
-            <h3>Cart</h3>
+          <Navbar.Link href="/admin">
+            <h3>Admin</h3>
           </Navbar.Link>
           <Navbar.Link href="/register">
             <h3>Register</h3>
@@ -40,6 +41,7 @@ export default function NavBar() {
 
       {/* <LoginForm /> */}
       <div className="flex md:order-4">
+        <ItemCart />
         <Dropdown inline label={<Avatar alt="User settings" img="/images/userprofile.png" rounded />}>
           <Dropdown.Header>
             <span className="block text-sm">Steff</span>

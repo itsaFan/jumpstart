@@ -9,14 +9,14 @@ export default function NavSearch() {
           <label htmlFor="category">
             <p>Categories</p>
           </label>
-          <select id="category">
-            <option value="2022">Shoes</option>
+          <select id="category" className="border-4 border-transparent focus:border-transparent">
+            <option  value="2022">Shoes</option>
             <option value="2023">2023</option>
           </select>
         </div>
         <div className={classes.control}>
           <label htmlFor="month"><p>Products</p></label>
-          <input type="text" id="search" placeholder="Product name" />
+          <input type="text" id="search" className="border-4 border-transparent focus:border-transparent" placeholder="Product name" />
         </div>
       </div>
       <Button link="">
