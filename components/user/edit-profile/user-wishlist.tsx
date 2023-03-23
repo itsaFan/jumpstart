@@ -7,7 +7,7 @@ import SettingCard from "./settings-card";
 export default function UserWishlist() {
   return (
     <SettingCard>
-        <div className="h-screen">
+        <div className="h-80">
         <div className="grid grid-cols-4 gap-6 ">
         <Card className="bg-black border-0 p-2 rounded-xl">
           <Image src="/images/product1.jpg" alt="product1" width={260} height={260} className="rounded-xl h-32" />
