@@ -5,7 +5,7 @@ import AddUser from "./add-user";
 import SalesReportTable from "./sales-report";
 
 export default function AdminContent() {
-  function addProductHandler(productData: { productName: string; price: string; quantity: string; category: string; productDesc: string;  }) {
+  function addProductHandler(productData: { productName: string; price: string; quantity: string; category: string; productDesc: string }) {
     fetch("api/admin/product", {
       method: "POST",
       body: JSON.stringify(productData),

@@ -62,11 +62,9 @@ export default function AddProduct(props: NewProductProps) {
           <div className=" mb-3">
             <input className="rounded-lg text-sm" size={40} type="text" id="category" placeholder="Category" ref={categoryInputRef} />
           </div>
-          {/* <div className=" mr-44 mb-3">
-          <Button link="" className="text-sm bg-white text-black font-semibold hover:bg-rose-400">
-            Upload Image
-          </Button>
-        </div> */}
+          <div className=" mr-44 mb-3">
+          {/* <input className="text-sm bg-white text-black font-semibold hover:bg-rose-400" type="file" accept="image/*" onChange={handleFileInputChange} ref={fileInputRef} /> */}
+        </div>
           <div className=" mb-3">
             <textarea className="rounded-lg text-sm h-44 resize-y w-80" id="productDesc" placeholder="Description" ref={productdescInputRef}></textarea>
           </div>
