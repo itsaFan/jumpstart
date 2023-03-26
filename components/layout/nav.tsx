@@ -3,6 +3,7 @@ import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import NavSearch from "./navSearch";
 import LoginForm from "../auth/login/login-form";
 import ItemCart from "../cart/item-cart";
+import Link from "next/link";
 
 
 export default function NavBar() {
@@ -47,10 +48,10 @@ export default function NavBar() {
             <span className="block text-sm">Steff</span>
             <span className="block truncate text-sm font-medium">steff@email.com</span>
           </Dropdown.Header>
-          <Dropdown.Item>My Profile</Dropdown.Item>
-          <Dropdown.Item>Order History</Dropdown.Item>
-          <Dropdown.Item>Wishlist</Dropdown.Item>
-          <Dropdown.Item>Settings</Dropdown.Item>
+          <Dropdown.Item><Link href="/user-profile/1">My Profile</Link></Dropdown.Item>
+          <Dropdown.Item><Link href="/user-profile/order-history/1">Order History</Link></Dropdown.Item>
+          <Dropdown.Item><Link href="/user-profile/wishlist/1">Wishlist</Link></Dropdown.Item>
+          <Dropdown.Item><Link href="/user-profile/settings/1">Settings</Link></Dropdown.Item>
           <Dropdown.Divider />
           <Dropdown.Item>Sign out</Dropdown.Item>
         </Dropdown>
