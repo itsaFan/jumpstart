@@ -1,5 +1,9 @@
-
-
+export interface Product {
+  _id: string;
+  name: string;
+  image: string;
+  price: string;
+}
 
 export interface NewProductProps {
     onAddProduct: (product: { 
@@ -10,5 +14,10 @@ export interface NewProductProps {
       productDesc: string;
     }) => void;
   }
+
+
+export interface ProductItemProps {
+  products: Product[];
+}
   
   

@@ -1,4 +1,4 @@
-import { connectDatabase, insertDocument } from "@/helpers/db-connect";
+import { connectDatabase, insertDocument, getAllDocuments } from "@/helpers/db-connect";
 import { NextApiRequest, NextApiResponse } from "next";
 
 
@@ -38,6 +38,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       res.status(500).json({ message: "Add New Product Failed!" });
     }
   }
+
+  // if (req.method === "GET") {
+  //   try {
+  //     const documents = await getAllDocuments(client, "products", { _id: -1 });
+  //     res.status(200).json({ products: documents });
+  //   } catch (error) {
+  //     res.status(500).json({ message: "Getting products failed"})
+  //   }
+  // }
+
+
   client.close();
 }
 

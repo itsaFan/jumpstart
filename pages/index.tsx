@@ -1,10 +1,16 @@
 import HomeCarousel from "@/components/home/banner-carousel";
 import HomeProductContent from "@/components/home/carousel-product/product-content";
-import ProductList from "@/components/product/product-list";
+import ProductItem from "@/components/product/product-item";
 import CustomHRline from "@/components/UI/customHR";
 import PageHeader from "@/components/UI/page-header";
+import { getProducts } from "@/helpers/db-connect";
+import { Product } from "@/helpers/product-interface";
 
-export default function Homepage() {
+type Props = {
+  products: Product[];
+};
+
+export default function Homepage({ products }: Props) {
   return (
     <>
       <PageHeader title="Homepage" />
@@ -17,9 +23,21 @@ export default function Homepage() {
         </div>
         <CustomHRline />
         <div>
-          <ProductList />
+          <ProductItem products={products} />
         </div>
       </section>
     </>
   );
 }
+
+export async function getStaticProps() {
+  const products = await getProducts();
+
+  return {
+    props: {
+      products,
+    },
+    revalidate: 60,
+  };
+}
+
